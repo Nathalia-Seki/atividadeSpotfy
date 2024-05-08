@@ -1,0 +1,16 @@
+:root{
+    --verdeEscuri : #1db954;
+    --verdeClaro : #1ed760;
+    --branco : #ffffff;
+    --preto : #191414;
+}
+
+body{
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(94,33,41,1) 47%, rgba(161,48,63,1) 100%);
+}
+
+#navbarNav a{
+    color: var(--branco);
+}
