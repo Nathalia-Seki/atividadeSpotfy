@@ -12,6 +12,8 @@
     --secundario : #1ed760;
     --branco : #ffffff;
     --preto : #191414;
+    --cinza : rgb(54, 51, 51);
+    --cinzaClaro : rgb(109, 109, 109);
 }
 
 body{
@@ -25,7 +27,7 @@ body{
 }
 
 .active{
-    border-bottom: var(--branco) 3px solid;
+    border-bottom: var(--secundario) 3px solid;
 }
 
 .card img, .card{
@@ -37,3 +39,53 @@ body{
     width: 40px;
 }
 
+#playerMusica{
+    height: auto;
+    background-color: var(--cinza);
+}
+
+#progressoDaMusica{
+    transition: 200s;
+    background-color: var(--primario);
+}
+
+#botoesMusica img{
+    height: 23px;
+}
+
+.progressoDaMusicaComeco{
+    width: 0%;
+    transition: 200s;
+}
+
+.progressoDaMusicaCompleto{
+    width: 100%;
+    transition: 200s;
+}
+
+#progressoDaMusicaBarraTotal{
+    width: 60%;
+    background-color: var(--cinzaClaro);
+    height: 3px;
+}
+
+/* menu lateral */
+
+#menuLateral{
+    /* pode colocar manual a largura acrescentando */
+    /* width: 300px; */
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.input-group input, .input-group span{
+    border: none;
+    border-top: 1px solid var(--branco);
+    border-bottom: 1px solid var(--branco);
+    border-radius: 0%;
+
+}
+
+/* Quando adiciona :: consegue fazer algumas funções em subseções */
+input::placeholder{
+    color: var(--branco) !important;
+}
